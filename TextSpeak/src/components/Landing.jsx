@@ -7,7 +7,7 @@ function Landing() {
       <h3>The premier hub for sharpening your speaking!</h3>
       <button>
         {" "}
-        <Link to="/generator">Get started</Link>
+        <Link to="/create-post">Get started</Link>
       </button>
     </div>
   );

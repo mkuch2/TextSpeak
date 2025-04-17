@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import Landing from "./components/Landing.jsx";
-import Generator from "./components/Generator.jsx";
+import CreatePost from "./components/CreatePost.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +12,8 @@ const router = createBrowserRouter([
     path: "/",
   },
   {
-    path: "/generator",
-    element: <Generator />,
+    path: "/create-post",
+    element: <CreatePost />,
   },
 ]);
 
