@@ -15,7 +15,7 @@ function CreatePost() {
     console.log(inputs);
   }
   return (
-    <div>
+    <div class="rounded-box">
       <h1>Create post</h1>
       <form onSubmit={handleSubmit}>
       <label>Title:
