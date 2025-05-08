@@ -1,19 +1,30 @@
+// src/main.jsx
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import Landing from "./components/Landing.jsx";
 import CreatePost from "./components/CreatePost.jsx";
+import Login from "./components/Login.jsx"; // Add this import
 
 const router = createBrowserRouter([
   {
-    element: <Landing />,
-    path: "/",
-  },
-  {
-    path: "/create-post",
-    element: <CreatePost />,
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Landing />,
+      },
+      {
+        path: "/create-post",
+        element: <CreatePost />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      }
+    ],
   },
 ]);
 
